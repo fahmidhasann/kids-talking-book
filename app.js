@@ -669,7 +669,7 @@
 
       card.innerHTML = `
         <div class="coverflow-img-wrap">
-          <img src="${cat.image}" alt="${cat.title}" loading="lazy">
+          <img src="${cat.image}" alt="${cat.title}" decoding="async">
         </div>
         <div class="coverflow-label-group">
           <h3 class="coverflow-title-en">${cat.title}</h3>

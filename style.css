@@ -412,6 +412,7 @@ html, body {
   cursor: pointer;
   transition: all 0.38s cubic-bezier(0.25, 0.8, 0.25, 1);
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 /* Center Active Category Card (Large & Straight) */
@@ -464,6 +465,8 @@ html, body {
   object-fit: contain;
   filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.12));
   transition: transform 0.25s ease;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .coverflow-card.center .coverflow-img-wrap img {
