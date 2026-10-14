@@ -1,0 +1,1113 @@
+// Kids Vocabulary Data extracted from English Book Play
+window.VOCABULARY_DATA = [
+  {
+    "id": "fruits",
+    "title": "Fruits",
+    "titleBn": "ফলমূল",
+    "icon": "🍎",
+    "color": "#FF6B6B",
+    "bgGradient": "linear-gradient(135deg, #FF6B6B, #FFA07A)",
+    "items": [
+      {
+        "id": "dates",
+        "word": "Dates",
+        "pron": "ডেটস্",
+        "meaning": "খেজুর",
+        "xref": 62,
+        "page": 1,
+        "sentence": "Dates are sweet and healthy!",
+        "image": "images/dates.png"
+      },
+      {
+        "id": "watermelon",
+        "word": "Watermelon",
+        "pron": "ওয়াটারমেলন",
+        "meaning": "তরমুজ",
+        "xref": 70,
+        "page": 1,
+        "sentence": "Watermelon is juicy and red inside!",
+        "image": "images/watermelon.png"
+      },
+      {
+        "id": "jackfruit",
+        "word": "Jackfruit",
+        "pron": "জ্যাকফ্রুট",
+        "meaning": "কাঁঠাল",
+        "xref": 75,
+        "page": 1,
+        "sentence": "Jackfruit is our national fruit!",
+        "image": "images/jackfruit.png"
+      },
+      {
+        "id": "melon",
+        "word": "Melon",
+        "pron": "মেলন",
+        "meaning": "বাঙ্গি",
+        "xref": 81,
+        "page": 1,
+        "sentence": "Melon is a fresh summer fruit!",
+        "image": "images/melon.png"
+      },
+      {
+        "id": "pineapple",
+        "word": "Pineapple",
+        "pron": "পাইনঅ্যাপল",
+        "meaning": "আনারস",
+        "xref": 87,
+        "page": 1,
+        "sentence": "Pineapple has a sweet and tangy taste!",
+        "image": "images/pineapple.png"
+      },
+      {
+        "id": "plum",
+        "word": "Plum",
+        "pron": "প্লাম",
+        "meaning": "বরই",
+        "xref": 93,
+        "page": 1,
+        "sentence": "Plum is sour and yummy!",
+        "image": "images/plum.png"
+      },
+      {
+        "id": "apple",
+        "word": "Apple",
+        "pron": "অ্যাপল",
+        "meaning": "আপেল",
+        "xref": 101,
+        "page": 1,
+        "sentence": "An apple a day keeps the doctor away!",
+        "image": "images/apple.png"
+      },
+      {
+        "id": "mango",
+        "word": "Mango",
+        "pron": "ম্যাঙ্গো",
+        "meaning": "আম",
+        "xref": 118,
+        "page": 2,
+        "sentence": "Mango is the king of fruits!",
+        "image": "images/mango.png"
+      },
+      {
+        "id": "pear",
+        "word": "Pear",
+        "pron": "পেয়ার",
+        "meaning": "নাশপাতি",
+        "xref": 123,
+        "page": 2,
+        "sentence": "Pears are crunchy and sweet!",
+        "image": "images/pear.png"
+      },
+      {
+        "id": "banana",
+        "word": "Banana",
+        "pron": "ব্যানানা",
+        "meaning": "কলা",
+        "xref": 131,
+        "page": 2,
+        "sentence": "Monkeys love eating bananas!",
+        "image": "images/banana.png"
+      },
+      {
+        "id": "orange",
+        "word": "Orange",
+        "pron": "অরেঞ্জ",
+        "meaning": "কমলা",
+        "xref": 138,
+        "page": 2,
+        "sentence": "Oranges are rich in Vitamin C!",
+        "image": "images/orange.png"
+      },
+      {
+        "id": "lemon",
+        "word": "Lemon",
+        "pron": "লেমন",
+        "meaning": "লেবু",
+        "xref": 143,
+        "page": 2,
+        "sentence": "Lemon juice is very refreshing!",
+        "image": "images/lemon.png"
+      },
+      {
+        "id": "peach",
+        "word": "Peach",
+        "pron": "পিচ",
+        "meaning": "পিচ ফল",
+        "xref": 149,
+        "page": 2,
+        "sentence": "Peaches have soft fuzzy skin!",
+        "image": "images/peach.png"
+      },
+      {
+        "id": "grapes",
+        "word": "Grapes",
+        "pron": "গ্রেপস্",
+        "meaning": "আঙুর",
+        "xref": 155,
+        "page": 2,
+        "sentence": "Grapes grow in beautiful bunches!",
+        "image": "images/grapes.png"
+      }
+    ]
+  },
+  {
+    "id": "animals",
+    "title": "Animals",
+    "titleBn": "পশুপাখি ও প্রাণী",
+    "icon": "🦁",
+    "color": "#FF9F43",
+    "bgGradient": "linear-gradient(135deg, #FF9F43, #FED330)",
+    "items": [
+      {
+        "id": "deer",
+        "word": "Deer",
+        "pron": "ডিয়ার",
+        "meaning": "হরিণ",
+        "xref": 163,
+        "page": 3,
+        "sentence": "The deer runs very fast in the woods!",
+        "image": "images/deer.png"
+      },
+      {
+        "id": "fox",
+        "word": "Fox",
+        "pron": "ফক্স",
+        "meaning": "শিয়াল",
+        "xref": 169,
+        "page": 3,
+        "sentence": "The clever fox has a bushy tail!",
+        "image": "images/fox.png"
+      },
+      {
+        "id": "mouse",
+        "word": "Mouse",
+        "pron": "মাউস",
+        "meaning": "ছোট ইঁদুর",
+        "xref": 175,
+        "page": 3,
+        "sentence": "The little mouse loves cheese!",
+        "image": "images/mouse.png"
+      },
+      {
+        "id": "rat",
+        "word": "Rat",
+        "pron": "র‍্যাট",
+        "meaning": "বড় ইঁদুর",
+        "xref": 181,
+        "page": 3,
+        "sentence": "The rat scurried across the floor!",
+        "image": "images/rat.png"
+      },
+      {
+        "id": "lion",
+        "word": "Lion",
+        "pron": "লায়ন",
+        "meaning": "সিংহ",
+        "xref": 187,
+        "page": 3,
+        "sentence": "The lion is the king of the jungle!",
+        "image": "images/lion.png"
+      },
+      {
+        "id": "monkey",
+        "word": "Monkey",
+        "pron": "মাংকি",
+        "meaning": "বানর",
+        "xref": 193,
+        "page": 3,
+        "sentence": "Monkeys love jumping from tree to tree!",
+        "image": "images/monkey.png"
+      },
+      {
+        "id": "bear",
+        "word": "Bear",
+        "pron": "বেয়ার",
+        "meaning": "ভালুক",
+        "xref": 199,
+        "page": 3,
+        "sentence": "The big bear loves eating honey!",
+        "image": "images/bear.png"
+      }
+    ]
+  },
+  {
+    "id": "nature",
+    "title": "Nature",
+    "titleBn": "প্রকৃতি",
+    "icon": "🌊",
+    "color": "#0ABDE3",
+    "bgGradient": "linear-gradient(135deg, #0ABDE3, #48DBFB)",
+    "items": [
+      {
+        "id": "sea",
+        "word": "Sea",
+        "pron": "সি",
+        "meaning": "সাগর",
+        "xref": 246,
+        "page": 4,
+        "sentence": "The sea has big blue waves!",
+        "image": "images/sea.png"
+      },
+      {
+        "id": "ocean",
+        "word": "Ocean",
+        "pron": "ওশান",
+        "meaning": "মহাসমুদ্র",
+        "xref": 249,
+        "page": 4,
+        "sentence": "The ocean covers most of our planet!",
+        "image": "images/ocean.png"
+      },
+      {
+        "id": "island",
+        "word": "Island",
+        "pron": "আইল্যান্ড",
+        "meaning": "দ্বীপ",
+        "xref": 252,
+        "page": 4,
+        "sentence": "An island is surrounded by water!",
+        "image": "images/island.png"
+      },
+      {
+        "id": "forest",
+        "word": "Forest",
+        "pron": "ফরেস্ট",
+        "meaning": "বন",
+        "xref": 255,
+        "page": 4,
+        "sentence": "The green forest is full of tall trees!",
+        "image": "images/forest.png"
+      },
+      {
+        "id": "river",
+        "word": "River",
+        "pron": "রিভার",
+        "meaning": "নদী",
+        "xref": 258,
+        "page": 4,
+        "sentence": "The river flows down to the sea!",
+        "image": "images/river.png"
+      },
+      {
+        "id": "lake",
+        "word": "Lake",
+        "pron": "লেক",
+        "meaning": "হ্রদ",
+        "xref": 261,
+        "page": 4,
+        "sentence": "The quiet lake reflects the sky!",
+        "image": "images/lake.png"
+      },
+      {
+        "id": "field",
+        "word": "Field",
+        "pron": "ফিল্ড",
+        "meaning": "মাঠ",
+        "xref": 264,
+        "page": 4,
+        "sentence": "Children play games in the green field!",
+        "image": "images/field.png"
+      },
+      {
+        "id": "mountain",
+        "word": "Mountain",
+        "pron": "মাউন্টেন",
+        "meaning": "পাহাড়",
+        "xref": 267,
+        "page": 4,
+        "sentence": "The mountain touches the clouds!",
+        "image": "images/mountain.png"
+      }
+    ]
+  },
+  {
+    "id": "household",
+    "title": "Household & Furniture",
+    "titleBn": "আসবাবপত্র ও গৃহস্থালী",
+    "icon": "🛋️",
+    "color": "#10AC84",
+    "bgGradient": "linear-gradient(135deg, #10AC84, #1DD1A1)",
+    "items": [
+      {
+        "id": "door",
+        "word": "Door",
+        "pron": "ডোর",
+        "meaning": "দরজা",
+        "xref": 281,
+        "page": 5,
+        "sentence": "Please knock before opening the door!",
+        "image": "images/door.png"
+      },
+      {
+        "id": "door_lock",
+        "word": "Door lock",
+        "pron": "ডোর লক",
+        "meaning": "দরজার তালা",
+        "xref": 284,
+        "page": 5,
+        "sentence": "Lock the door to keep the room safe!",
+        "image": "images/door_lock.png"
+      },
+      {
+        "id": "door_handle",
+        "word": "Door handle",
+        "pron": "ডোর হ্যান্ডেল",
+        "meaning": "দরজার হাতল",
+        "xref": 290,
+        "page": 5,
+        "sentence": "Turn the door handle to open!",
+        "image": "images/door_handle.png"
+      },
+      {
+        "id": "window",
+        "word": "Window",
+        "pron": "উইন্ডো",
+        "meaning": "জানালা",
+        "xref": 293,
+        "page": 5,
+        "sentence": "Open the window for fresh cool air!",
+        "image": "images/window.png"
+      },
+      {
+        "id": "fridge",
+        "word": "Fridge",
+        "pron": "ফ্রিজ",
+        "meaning": "ফ্রিজ",
+        "xref": 296,
+        "page": 5,
+        "sentence": "We keep milk and fruits cold in the fridge!",
+        "image": "images/fridge.png"
+      },
+      {
+        "id": "ac",
+        "word": "AC",
+        "pron": "এসি",
+        "meaning": "শীতাতপ নিয়ন্ত্রণ যন্ত্র",
+        "xref": 299,
+        "page": 5,
+        "sentence": "The AC keeps the room cool in hot summer!",
+        "image": "images/ac.png"
+      },
+      {
+        "id": "bed",
+        "word": "Bed",
+        "pron": "বেড",
+        "meaning": "বিছানা",
+        "xref": 302,
+        "page": 5,
+        "sentence": "Time to sleep in our cozy soft bed!",
+        "image": "images/bed.png"
+      },
+      {
+        "id": "bed_sheet",
+        "word": "Bed sheet",
+        "pron": "বেড শিট",
+        "meaning": "চাদর",
+        "xref": 308,
+        "page": 5,
+        "sentence": "Spread a clean colorful bed sheet!",
+        "image": "images/bed_sheet.png"
+      },
+      {
+        "id": "mattress",
+        "word": "Mattress",
+        "pron": "ম্যাট্রেস",
+        "meaning": "তোশক বা গদি",
+        "xref": 305,
+        "page": 5,
+        "sentence": "The mattress is bouncy and comfortable!",
+        "image": "images/mattress.png"
+      }
+    ]
+  },
+  {
+    "id": "body_parts",
+    "title": "Body Parts",
+    "titleBn": "শরীরের অঙ্গপ্রত্যঙ্গ",
+    "icon": "🧍",
+    "color": "#EE5253",
+    "bgGradient": "linear-gradient(135deg, #EE5253, #FF7675)",
+    "items": [
+      {
+        "id": "head",
+        "word": "Head",
+        "pron": "হেড",
+        "meaning": "মাথা",
+        "xref": 319,
+        "page": 6,
+        "sentence": "Nod your head and say yes!",
+        "image": "images/head.png"
+      },
+      {
+        "id": "hair",
+        "word": "Hair",
+        "pron": "হেয়ার",
+        "meaning": "চুল",
+        "xref": 322,
+        "page": 6,
+        "sentence": "Comb your hair every morning!",
+        "image": "images/hair.png"
+      },
+      {
+        "id": "forehead",
+        "word": "Forehead",
+        "pron": "ফোরহেড",
+        "meaning": "কপাল",
+        "xref": 325,
+        "page": 6,
+        "sentence": "Touch your forehead with your fingers!",
+        "image": "images/forehead.png"
+      },
+      {
+        "id": "eye",
+        "word": "Eye",
+        "pron": "আই",
+        "meaning": "চোখ",
+        "xref": 328,
+        "page": 6,
+        "sentence": "We see the beautiful world with our eyes!",
+        "image": "images/eye.png"
+      },
+      {
+        "id": "eyebrow",
+        "word": "Eyebrow",
+        "pron": "আইব্রো",
+        "meaning": "ভ্রূ",
+        "xref": 331,
+        "page": 6,
+        "sentence": "Wiggle your eyebrows up and down!",
+        "image": "images/eyebrow.png"
+      },
+      {
+        "id": "eyelash",
+        "word": "Eyelash",
+        "pron": "আইল্যাশ",
+        "meaning": "চোখের পাপড়ি",
+        "xref": 334,
+        "page": 6,
+        "sentence": "Eyelashes protect our eyes from dust!",
+        "image": "images/eyelash.png"
+      },
+      {
+        "id": "nose",
+        "word": "Nose",
+        "pron": "নোজ",
+        "meaning": "নাক",
+        "xref": 342,
+        "page": 7,
+        "sentence": "We smell sweet flowers with our nose!",
+        "image": "images/nose.png"
+      },
+      {
+        "id": "nostril",
+        "word": "Nostril",
+        "pron": "নস্ট্রিল",
+        "meaning": "নাকের ছিদ্র",
+        "xref": 345,
+        "page": 7,
+        "sentence": "Air enters through our nostrils when breathing!",
+        "image": "images/nostril.png"
+      },
+      {
+        "id": "ear",
+        "word": "Ear",
+        "pron": "ইয়ার",
+        "meaning": "কান",
+        "xref": 348,
+        "page": 7,
+        "sentence": "We listen to happy music with our ears!",
+        "image": "images/ear.png"
+      },
+      {
+        "id": "cheek",
+        "word": "Cheek",
+        "pron": "চিক",
+        "meaning": "গাল",
+        "xref": 351,
+        "page": 7,
+        "sentence": "Pinch the soft chubby cheeks!",
+        "image": "images/cheek.png"
+      },
+      {
+        "id": "mouth",
+        "word": "Mouth",
+        "pron": "মাউথ",
+        "meaning": "মুখ",
+        "xref": 354,
+        "page": 7,
+        "sentence": "Open your mouth and smile happily!",
+        "image": "images/mouth.png"
+      },
+      {
+        "id": "lip",
+        "word": "Lip",
+        "pron": "লিপ",
+        "meaning": "ঠোঁট",
+        "xref": 357,
+        "page": 7,
+        "sentence": "Smile brightly with your pink lips!",
+        "image": "images/lip.png"
+      },
+      {
+        "id": "tooth",
+        "word": "Tooth",
+        "pron": "টুথ",
+        "meaning": "দাঁত (একটি)",
+        "xref": 360,
+        "page": 7,
+        "sentence": "Brush each tooth twice a day!",
+        "image": "images/tooth.png"
+      },
+      {
+        "id": "teeth",
+        "word": "Teeth",
+        "pron": "টিথ",
+        "meaning": "দাঁতগুলো",
+        "xref": 363,
+        "page": 7,
+        "sentence": "Clean shiny white teeth look great!",
+        "image": "images/teeth.png"
+      },
+      {
+        "id": "tongue",
+        "word": "Tongue",
+        "pron": "টাং",
+        "meaning": "জিহ্বা",
+        "xref": 366,
+        "page": 7,
+        "sentence": "We taste sweet ice-cream with our tongue!",
+        "image": "images/tongue.png"
+      },
+      {
+        "id": "chin",
+        "word": "Chin",
+        "pron": "চিন",
+        "meaning": "থুতনি",
+        "xref": 371,
+        "page": 8,
+        "sentence": "Rest your chin on your hands!",
+        "image": "images/chin.png"
+      },
+      {
+        "id": "face",
+        "word": "Face",
+        "pron": "ফেস",
+        "meaning": "মুখমণ্ডল",
+        "xref": 374,
+        "page": 8,
+        "sentence": "Wash your face with fresh cool water!",
+        "image": "images/face.png"
+      },
+      {
+        "id": "neck",
+        "word": "Neck",
+        "pron": "নেক",
+        "meaning": "ঘাড়",
+        "xref": 377,
+        "page": 8,
+        "sentence": "Turn your neck gently left and right!",
+        "image": "images/neck.png"
+      },
+      {
+        "id": "throat",
+        "word": "Throat",
+        "pron": "থ্রোট",
+        "meaning": "গলা",
+        "xref": 328,
+        "page": 8,
+        "sentence": "Drink warm water when your throat feels sore!",
+        "image": "images/throat.png"
+      },
+      {
+        "id": "shoulder",
+        "word": "Shoulder",
+        "pron": "শোল্ডার",
+        "meaning": "কাঁধ",
+        "xref": 380,
+        "page": 8,
+        "sentence": "Carry your school bag on your shoulders!",
+        "image": "images/shoulder.png"
+      },
+      {
+        "id": "chest",
+        "word": "Chest",
+        "pron": "চেস্ট",
+        "meaning": "বুক",
+        "xref": 383,
+        "page": 8,
+        "sentence": "Take a deep breath into your chest!",
+        "image": "images/chest.png"
+      },
+      {
+        "id": "belly",
+        "word": "Belly",
+        "pron": "বেলি",
+        "meaning": "পেট",
+        "xref": 386,
+        "page": 8,
+        "sentence": "Pat your tummy after eating good food!",
+        "image": "images/belly.png"
+      },
+      {
+        "id": "navel",
+        "word": "Navel",
+        "pron": "নেভেল",
+        "meaning": "নাভি",
+        "xref": 389,
+        "page": 8,
+        "sentence": "The navel is located at the center of the belly!",
+        "image": "images/navel.png"
+      },
+      {
+        "id": "back",
+        "word": "Back",
+        "pron": "ব্যাক",
+        "meaning": "পিঠ",
+        "xref": 392,
+        "page": 8,
+        "sentence": "Stand tall and keep your back straight!",
+        "image": "images/back.png"
+      },
+      {
+        "id": "waist",
+        "word": "Waist",
+        "pron": "ওয়েস্ট",
+        "meaning": "কোমর",
+        "xref": 397,
+        "page": 9,
+        "sentence": "Put your hands on your waist and dance!",
+        "image": "images/waist.png"
+      },
+      {
+        "id": "arm",
+        "word": "Arm",
+        "pron": "আর্ম",
+        "meaning": "বাহু",
+        "xref": 400,
+        "page": 9,
+        "sentence": "Raise both your arms high in the air!",
+        "image": "images/arm.png"
+      },
+      {
+        "id": "elbow",
+        "word": "Elbow",
+        "pron": "এলবো",
+        "meaning": "কনুই",
+        "xref": 403,
+        "page": 9,
+        "sentence": "Bend your arm at the elbow!",
+        "image": "images/elbow.png"
+      },
+      {
+        "id": "wrist",
+        "word": "Wrist",
+        "pron": "রিস্ট",
+        "meaning": "কবজি",
+        "xref": 406,
+        "page": 9,
+        "sentence": "Wear a cool watch on your wrist!",
+        "image": "images/wrist.png"
+      },
+      {
+        "id": "hand",
+        "word": "Hand",
+        "pron": "হ্যান্ড",
+        "meaning": "হাত",
+        "xref": 409,
+        "page": 9,
+        "sentence": "Clap your hands together with rhythm!",
+        "image": "images/hand.png"
+      },
+      {
+        "id": "palm",
+        "word": "Palm",
+        "pron": "পাম",
+        "meaning": "হাতের তালু",
+        "xref": 409,
+        "page": 9,
+        "sentence": "Open your palms to catch the ball!",
+        "image": "images/palm.png"
+      },
+      {
+        "id": "finger",
+        "word": "Finger",
+        "pron": "ফিঙ্গার",
+        "meaning": "আঙুল",
+        "xref": 409,
+        "page": 9,
+        "sentence": "We have ten fingers on our hands!",
+        "image": "images/finger.png"
+      },
+      {
+        "id": "thumb",
+        "word": "Thumb",
+        "pron": "থাম্ব",
+        "meaning": "বুড়ো আঙুল",
+        "xref": 412,
+        "page": 9,
+        "sentence": "Give a thumbs up when you do a great job!",
+        "image": "images/thumb.png"
+      },
+      {
+        "id": "fingernail",
+        "word": "Fingernail",
+        "pron": "ফিঙ্গারনেইল",
+        "meaning": "নখ",
+        "xref": 417,
+        "page": 9,
+        "sentence": "Keep your fingernails clean and trimmed!",
+        "image": "images/fingernail.png"
+      },
+      {
+        "id": "leg",
+        "word": "Leg",
+        "pron": "লেগ",
+        "meaning": "পা",
+        "xref": 421,
+        "page": 10,
+        "sentence": "Use your strong legs to run and jump!",
+        "image": "images/leg.png"
+      },
+      {
+        "id": "thigh",
+        "word": "Thigh",
+        "pron": "থাই",
+        "meaning": "উরু",
+        "xref": 424,
+        "page": 10,
+        "sentence": "The thigh is between hip and knee!",
+        "image": "images/thigh.png"
+      },
+      {
+        "id": "knee",
+        "word": "Knee",
+        "pron": "নী",
+        "meaning": "হাঁটু",
+        "xref": 427,
+        "page": 10,
+        "sentence": "Bend your knees when you sit down!",
+        "image": "images/knee.png"
+      },
+      {
+        "id": "ankle",
+        "word": "Ankle",
+        "pron": "অ্যাঙ্কেল",
+        "meaning": "গোড়ালি",
+        "xref": 430,
+        "page": 10,
+        "sentence": "Rotate your ankles before playing sports!",
+        "image": "images/ankle.png"
+      },
+      {
+        "id": "foot",
+        "word": "Foot",
+        "pron": "ফুট",
+        "meaning": "পায়ের পাতা",
+        "xref": 433,
+        "page": 10,
+        "sentence": "Put your right foot forward!",
+        "image": "images/foot.png"
+      },
+      {
+        "id": "feet",
+        "word": "Feet",
+        "pron": "ফিট",
+        "meaning": "পায়ের পাতাগুলো",
+        "xref": 433,
+        "page": 10,
+        "sentence": "Stomp your feet to the music!",
+        "image": "images/feet.png"
+      },
+      {
+        "id": "heel",
+        "word": "Heel",
+        "pron": "হিল",
+        "meaning": "পায়ের গোড়ালি",
+        "xref": 436,
+        "page": 10,
+        "sentence": "Walk carefully on your heels and toes!",
+        "image": "images/heel.png"
+      },
+      {
+        "id": "toe",
+        "word": "Toe",
+        "pron": "টো",
+        "meaning": "পায়ের আঙুল",
+        "xref": 439,
+        "page": 10,
+        "sentence": "Wiggle your cute toes in the water!",
+        "image": "images/toe.png"
+      },
+      {
+        "id": "skin",
+        "word": "Skin",
+        "pron": "স্কিন",
+        "meaning": "ত্বক বা চামড়া",
+        "xref": 442,
+        "page": 10,
+        "sentence": "Healthy skin protects our whole body!",
+        "image": "images/skin.png"
+      },
+      {
+        "id": "heart",
+        "word": "Heart",
+        "pron": "হার্ট",
+        "meaning": "হৃৎপিণ্ড",
+        "xref": 445,
+        "page": 10,
+        "sentence": "Listen to your beating heart: lub-dub!",
+        "image": "images/heart.png"
+      },
+      {
+        "id": "brain",
+        "word": "Brain",
+        "pron": "ব্রেইন",
+        "meaning": "মস্তিষ্ক",
+        "xref": 448,
+        "page": 10,
+        "sentence": "Our clever brain helps us think and learn!",
+        "image": "images/brain.png"
+      }
+    ]
+  },
+  {
+    "id": "birds",
+    "title": "Birds",
+    "titleBn": "পাখি",
+    "icon": "🦜",
+    "color": "#54A0FF",
+    "bgGradient": "linear-gradient(135deg, #54A0FF, #00D2D3)",
+    "items": [
+      {
+        "id": "owl",
+        "word": "Owl",
+        "pron": "আউল",
+        "meaning": "পেঁচা",
+        "xref": 453,
+        "page": 11,
+        "sentence": "The wise owl stays awake at night!",
+        "image": "images/owl.png"
+      },
+      {
+        "id": "pigeon",
+        "word": "Pigeon",
+        "pron": "পিজিয়ন",
+        "meaning": "কবুতর",
+        "xref": 461,
+        "page": 11,
+        "sentence": "The friendly pigeon coos on the rooftop!",
+        "image": "images/pigeon.png"
+      },
+      {
+        "id": "swan",
+        "word": "Swan",
+        "pron": "সোয়ান",
+        "meaning": "রাজহাঁস",
+        "xref": 466,
+        "page": 11,
+        "sentence": "The graceful white swan swims in the lake!",
+        "image": "images/swan.png"
+      },
+      {
+        "id": "crow",
+        "word": "Crow",
+        "pron": "ক্রো",
+        "meaning": "কাক",
+        "xref": 469,
+        "page": 11,
+        "sentence": "The clever black crow calls caw-caw!",
+        "image": "images/crow.png"
+      },
+      {
+        "id": "sparrow",
+        "word": "Sparrow",
+        "pron": "স্প্যারো",
+        "meaning": "চড়ুই পাখি",
+        "xref": 475,
+        "page": 11,
+        "sentence": "The tiny sparrow chirps sweetly in the morning!",
+        "image": "images/sparrow.png"
+      }
+    ]
+  },
+  {
+    "id": "insects",
+    "title": "Insects",
+    "titleBn": "পোকামাকড়",
+    "icon": "🦋",
+    "color": "#5F27CD",
+    "bgGradient": "linear-gradient(135deg, #5F27CD, #341F97)",
+    "items": [
+      {
+        "id": "butterfly",
+        "word": "Butterfly",
+        "pron": "বাটারফ্লাই",
+        "meaning": "প্রজাপতি",
+        "xref": 512,
+        "page": 12,
+        "sentence": "The colorful butterfly dances over flowers!",
+        "image": "images/butterfly.png"
+      },
+      {
+        "id": "fly",
+        "word": "Fly",
+        "pron": "ফ্লাই",
+        "meaning": "মাছি",
+        "xref": 515,
+        "page": 12,
+        "sentence": "Shoo the little fly away from food!",
+        "image": "images/fly.png"
+      },
+      {
+        "id": "spider",
+        "word": "Spider",
+        "pron": "স্পাইডার",
+        "meaning": "মাকড়সা",
+        "xref": 518,
+        "page": 12,
+        "sentence": "The spider spins an intricate web!",
+        "image": "images/spider.png"
+      },
+      {
+        "id": "ant",
+        "word": "Ant",
+        "pron": "অ্যান্ট",
+        "meaning": "পিঁপড়া",
+        "xref": 521,
+        "page": 12,
+        "sentence": "Tiny hardworking ants march in a neat line!",
+        "image": "images/ant.png"
+      },
+      {
+        "id": "bee",
+        "word": "Bee",
+        "pron": "বী",
+        "meaning": "মৌমাছি",
+        "xref": 524,
+        "page": 12,
+        "sentence": "The busy bee makes sweet delicious honey!",
+        "image": "images/bee.png"
+      }
+    ]
+  },
+  {
+    "id": "flowers",
+    "title": "Flowers",
+    "titleBn": "ফুল",
+    "icon": "🌸",
+    "color": "#FF6EA7",
+    "bgGradient": "linear-gradient(135deg, #FF6EA7, #FF9FF3)",
+    "items": [
+      {
+        "id": "rose",
+        "word": "Rose",
+        "pron": "রোজ",
+        "meaning": "গোলাপ",
+        "xref": 556,
+        "page": 13,
+        "sentence": "The red rose smells wonderful and sweet!",
+        "image": "images/rose.png"
+      },
+      {
+        "id": "tulip",
+        "word": "Tulip",
+        "pron": "টিউলিপ",
+        "meaning": "টিউলিপ ফুল",
+        "xref": 559,
+        "page": 13,
+        "sentence": "Bright yellow and pink tulips bloom in spring!",
+        "image": "images/tulip.png"
+      },
+      {
+        "id": "lotus",
+        "word": "Lotus",
+        "pron": "লোটাস",
+        "meaning": "পদ্ম",
+        "xref": 562,
+        "page": 13,
+        "sentence": "The lovely lotus blooms floating on the water!",
+        "image": "images/lotus.png"
+      },
+      {
+        "id": "sunflower",
+        "word": "Sunflower",
+        "pron": "সানফ্লাওয়ার",
+        "meaning": "সূর্যমুখী",
+        "xref": 565,
+        "page": 13,
+        "sentence": "The big bright sunflower always turns to the sun!",
+        "image": "images/sunflower.png"
+      }
+    ]
+  },
+  {
+    "id": "vehicles",
+    "title": "Vehicles",
+    "titleBn": "যানবাহন",
+    "icon": "🚗",
+    "color": "#FF793F",
+    "bgGradient": "linear-gradient(135deg, #FF793F, #FFB142)",
+    "items": [
+      {
+        "id": "car",
+        "word": "Car",
+        "pron": "কার",
+        "meaning": "গাড়ি",
+        "xref": 585,
+        "page": 14,
+        "sentence": "We take a fun family road trip in our car!",
+        "image": "images/car.png"
+      },
+      {
+        "id": "truck",
+        "word": "Truck",
+        "pron": "ট্রাক",
+        "meaning": "ট্রাক",
+        "xref": 588,
+        "page": 14,
+        "sentence": "The heavy truck carries lots of cargo!",
+        "image": "images/truck.png"
+      },
+      {
+        "id": "airplane",
+        "word": "Airplane",
+        "pron": "এয়ারপ্লেন",
+        "meaning": "উড়োজাহাজ",
+        "xref": 591,
+        "page": 14,
+        "sentence": "The airplane zooms high across the blue sky!",
+        "image": "images/airplane.png"
+      },
+      {
+        "id": "ship",
+        "word": "Ship",
+        "pron": "শিপ",
+        "meaning": "জাহাজ",
+        "xref": 594,
+        "page": 14,
+        "sentence": "The giant cruise ship sails across deep oceans!",
+        "image": "images/ship.png"
+      },
+      {
+        "id": "train",
+        "word": "Train",
+        "pron": "ট্রেন",
+        "meaning": "রেলগাড়ি",
+        "xref": 597,
+        "page": 14,
+        "sentence": "Choo-choo! The train runs fast along the railway tracks!",
+        "image": "images/train.png"
+      },
+      {
+        "id": "ambulance",
+        "word": "Ambulance",
+        "pron": "অ্যাম্বুলেন্স",
+        "meaning": "রোগী বহনকারী গাড়ি",
+        "xref": 600,
+        "page": 14,
+        "sentence": "Wee-woo! The ambulance rushes to help sick people!",
+        "image": "images/ambulance.png"
+      }
+    ]
+  }
+];

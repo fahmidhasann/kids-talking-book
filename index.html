@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Kids Talking Book | কথা বলা বই (English & বাংলা)</title>
+  
+  <!-- PWA & Mobile Standalone App Support -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#8DC63F">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="KidsTalkingBook">
+  <link rel="apple-touch-icon" href="images/icon-192.png">
+
+  <!-- Playful Rounded Typography -->
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Outer Lime-Green Framed App Container  -->
+  <div class="app-container" id="app-container">
+
+    <!-- ================= 1. HOME SCREEN: SELECT CATEGORY (Exact Screenshot 2) ================= -->
+    <section id="view-home" class="view-panel active">
+      <!-- Sky & Rolling Green Hills Background (Only visible on Sky Views) -->
+      <div class="sky-hills-backdrop" aria-hidden="true">
+        <div class="fluffy-cloud c1"></div>
+        <div class="fluffy-cloud c2"></div>
+        <div class="fluffy-cloud c3"></div>
+        <div class="green-hill hill-left"></div>
+        <div class="green-hill hill-right"></div>
+      </div>
+
+      <!-- Top Floating Corner Buttons + Center "Select Category 1 / 11" -->
+      <header class="home-top-bar">
+        <!-- Top-Left Cyan Gear Button -->
+        <button id="btn-settings" class="glossy-circle-btn cyan" title="Settings" aria-label="Settings">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="#FFFFFF">
+            <path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/>
+          </svg>
+        </button>
+
+        <!-- Center Brown Title & Counter -->
+        <div class="category-select-header">
+          <h1 class="category-select-title">Select Category</h1>
+          <div class="category-index-badge" id="category-index-badge">1 / 11</div>
+        </div>
+
+        <!-- Top-Right Green Sound Toggle Button -->
+        <button id="btn-sound-toggle" class="glossy-circle-btn green" title="Sound On/Off" aria-label="Sound Toggle">
+          <span id="sound-icon" class="sound-svg-wrap">🔊</span>
+        </button>
+      </header>
+
+      <!-- 3D Wooden Billboard Frame with Side Orange Arrows (Exact Screenshot 2) -->
+      <div class="wooden-billboard-wrapper">
+        <div class="wooden-billboard">
+          <!-- Left Orange Arrow Overlapping Wooden Edge -->
+          <button id="btn-coverflow-prev" class="glossy-orange-arrow prev" title="Previous Category" aria-label="Previous Category">
+            <span class="arrow-triangle">◀</span><span class="arrow-bar">❙</span>
+          </button>
+
+          <!-- Cream Inner Canvas with 3D Coverflow Cards -->
+          <div class="wooden-billboard-canvas">
+            <div class="coverflow-stage" id="coverflow-stage">
+              <!-- Dynamically rendered 3D perspective white cards -->
+            </div>
+          </div>
+
+          <!-- Right Orange Arrow Overlapping Wooden Edge -->
+          <button id="btn-coverflow-next" class="glossy-orange-arrow next" title="Next Category" aria-label="Next Category">
+            <span class="arrow-bar">❙</span><span class="arrow-triangle">▶</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Hidden hooks kept for JS compatibility -->
+      <button id="btn-open-active-category" style="display:none;"></button>
+      <button id="btn-toggle-all-cats" style="display:none;"><span id="txt-toggle-cats"></span></button>
+      <div id="kid-category-grid" style="display:none;"></div>
+    </section>
+
+
+    <!-- ================= 2. ITEM SHOWCASE: PURE WHITE STAGE (Exact Screenshot 3) ================= -->
+    <section id="view-cards" class="view-panel pure-white-stage">
+      <!-- Top Floating Corner Buttons: Green Back Arrow (Left), Fullscreen Toggle (Center-Right), & Cute Yellow Star (Right) -->
+      <div class="white-stage-top-bar">
+        <button id="btn-back-home" class="glossy-circle-btn green" title="Back to Categories" aria-label="Back">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="#4A6B1D">
+            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" stroke="#4A6B1D" stroke-width="1.5"/>
+          </svg>
+        </button>
+
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <!-- Fullscreen / Rotate Screen Button -->
+          <button id="btn-fullscreen-toggle" class="glossy-circle-btn cyan" title="বড় পর্দা / ফুলস্ক্রিন (Full Screen)" aria-label="Toggle Fullscreen">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#004D40" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+            </svg>
+          </button>
+
+          <!-- Cute Smiling Star Button (Top-Right) -->
+          <button id="btn-jumbo-star-cheer" class="cute-smiling-star-btn" title="Quiz / Cheer!">
+            <svg viewBox="0 0 64 64" width="54" height="54">
+              <polygon points="32,4 40,22 60,24 45,38 49,58 32,48 15,58 19,38 4,24 24,22" fill="#FFE135" stroke="#222" stroke-width="3" stroke-linejoin="round"/>
+              <circle cx="26" cy="30" r="2.5" fill="#222"/>
+              <circle cx="38" cy="30" r="2.5" fill="#222"/>
+              <path d="M29 35 Q32 38 35 35" stroke="#222" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Center Stage: Left Orange Arrow + Giant Isolated Picture + Right Orange Arrow -->
+      <div class="white-stage-center" id="item-white-card">
+        <button id="btn-jumbo-prev" class="glossy-orange-arrow stage-prev" title="আগের ছবি (Previous)" aria-label="Previous Item">
+          <span class="arrow-triangle">◀</span><span class="arrow-bar">❙</span>
+        </button>
+
+        <!-- Giant Clean Object Image -->
+        <div class="giant-object-holder" id="item-img-container" title="ট্যাপ করলে আবার বলবে!">
+          <img id="jumbo-img" src="images/apple.png" alt="Apple" class="giant-object-img">
+        </div>
+
+        <button id="btn-jumbo-next" class="glossy-orange-arrow stage-next" title="পরের ছবি (Next)" aria-label="Next Item">
+          <span class="arrow-bar">❙</span><span class="arrow-triangle">▶</span>
+        </button>
+      </div>
+
+      <!-- Bottom Centered Bilingual Caption (English + বাংলা অর্থ) -->
+      <div class="white-stage-bottom">
+        <div class="bilingual-caption-wrap" id="btn-jumbo-replay" title="আবার শোনো (Tap to hear again)">
+          <h1 id="jumbo-word" class="stage-english-word">Apple</h1>
+          <div class="stage-bangla-row">
+            <span id="jumbo-meaning" class="stage-bangla-word">আপেল</span>
+            <span id="jumbo-pron" class="stage-pron-hint">(অ্যাপল)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hidden hooks kept for JS compatibility -->
+      <span id="jumbo-cat-badge" style="display:none;"></span>
+      <span id="jumbo-counter" style="display:none;"></span>
+      <span id="jumbo-spelling-pill" style="display:none;"></span>
+      <span id="jumbo-sentence" style="display:none;"></span>
+      <button id="btn-jumbo-sentence" style="display:none;"></button>
+      <button id="btn-jumbo-bilingual" style="display:none;"></button>
+      <button id="btn-jumbo-spell" style="display:none;"></button>
+      <div id="jumbo-mic-feedback" style="display:none;"></div>
+    </section>
+
+
+    <!-- ================= 3. QUIZ: 4-CARD PHOTO FINDER (Exact Screenshot 4) ================= -->
+    <section id="view-quiz" class="view-panel">
+      <!-- Sky & Rolling Green Hills Backdrop -->
+      <div class="sky-hills-backdrop" aria-hidden="true">
+        <div class="fluffy-cloud c1"></div>
+        <div class="fluffy-cloud c2"></div>
+        <div class="green-hill hill-left"></div>
+        <div class="green-hill hill-right"></div>
+      </div>
+
+      <div class="quiz-exact-layout">
+        <!-- Left Sidebar Column: Green Back Button, 1/30 Counter, Checkmark 0, Cross 0 -->
+        <aside class="quiz-left-sidebar">
+          <button class="glossy-circle-btn green btn-subview-home" title="হোম মেনু">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="#4A6B1D">
+              <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" stroke="#4A6B1D" stroke-width="1.5"/>
+            </svg>
+          </button>
+
+          <div class="quiz-side-counter" id="quiz-counter">1 / 10</div>
+
+          <div class="quiz-side-stat">
+            <span class="stat-check">✔</span>
+            <span class="stat-num green-num" id="quiz-score-correct">0</span>
+          </div>
+
+          <div class="quiz-side-stat">
+            <span class="stat-cross">✘</span>
+            <span class="stat-num red-num" id="quiz-score-wrong">0</span>
+          </div>
+
+          <button id="btn-quiz-listen" class="glossy-circle-btn cyan sm" title="প্রশ্ন আবার শোনো">
+            <span>🔊</span>
+          </button>
+        </aside>
+
+        <!-- Main Right Area: Question Prompt + 2x2 Taped Wooden Photo Frames -->
+        <div class="quiz-main-area">
+          <div class="quiz-top-prompt">
+            <h2 id="quiz-question-text">Find: Apple (আপেল)</h2>
+            <span id="quiz-hint" style="display:none;"></span>
+          </div>
+
+          <div class="quiz-polaroid-grid" id="quiz-options">
+            <!-- 4 Taped Wooden Cards dynamically rendered -->
+          </div>
+
+          <div id="quiz-feedback" class="quiz-feedback"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= 4. PAINT: KIDS DRAWING & COLORING STUDIO ================= -->
+    <section id="view-paint" class="view-panel">
+      <div class="sky-hills-backdrop" aria-hidden="true">
+        <div class="green-hill hill-left"></div>
+        <div class="green-hill hill-right"></div>
+      </div>
+
+      <div class="paint-stage-container">
+        <div class="paint-stage-header">
+          <button class="glossy-circle-btn green btn-subview-home" title="হোম মেনু">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="#4A6B1D">
+              <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" stroke="#4A6B1D" stroke-width="1.5"/>
+            </svg>
+          </button>
+          <h2 class="paint-stage-title">🎨 Paint & Draw (ছবি আঁকা)</h2>
+          <div class="paint-header-actions">
+            <button id="btn-paint-undo" class="pill-btn sm">↩️ আনডু</button>
+            <button id="btn-paint-clear" class="pill-btn sm danger">🗑️ মুছো</button>
+            <button id="btn-paint-save" class="pill-btn sm primary">💾 সেভ</button>
+          </div>
+        </div>
+
+        <div class="paint-canvas-frame">
+          <canvas id="paint-canvas" width="820" height="440"></canvas>
+        </div>
+
+        <div class="paint-tools-panel">
+          <div class="paint-colors-bar" id="paint-colors-bar"></div>
+          <div class="paint-tools-row">
+            <div class="brush-size-group">
+              <span class="tool-label">ব্রাশ:</span>
+              <button class="brush-btn sm" data-size="4"></button>
+              <button class="brush-btn md active" data-size="10"></button>
+              <button class="brush-btn lg" data-size="20"></button>
+              <button class="brush-btn xl" data-size="34"></button>
+            </div>
+            <button id="btn-paint-eraser" class="tool-toggle-btn">🧹 ইরেজার</button>
+            <div class="paint-stamps-bar" id="paint-stamps-bar">
+              <button class="stamp-chip" data-stamp="⭐">⭐</button>
+              <button class="stamp-chip" data-stamp="🍎">🍎</button>
+              <button class="stamp-chip" data-stamp="🦁">🦁</button>
+              <button class="stamp-chip" data-stamp="🌸">🌸</button>
+              <button class="stamp-chip" data-stamp="🎈">🎈</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Settings Modal -->
+    <div class="modal-overlay" id="settings-modal">
+      <div class="modal-card settings-card">
+        <button class="modal-close-btn" id="btn-settings-close">✖</button>
+        <h2>⚙️ শব্দ ও ভয়েস সেটিংস</h2>
+
+        <div class="setting-group">
+          <label>🗣️ ভয়েসের গতি (Voice Speed):</label>
+          <div class="range-wrap">
+            <span>🐢</span>
+            <input type="range" id="setting-rate" min="0.6" max="1.2" step="0.05" value="0.75">
+            <span>🐇</span>
+          </div>
+        </div>
+
+        <div class="setting-group">
+          <label>🎵 ভয়েসের সুর (Pitch):</label>
+          <div class="range-wrap">
+            <span>🦁</span>
+            <input type="range" id="setting-pitch" min="0.9" max="1.6" step="0.05" value="1.35">
+            <span>🐥</span>
+          </div>
+        </div>
+
+        <div class="setting-group">
+          <label>🌐 English Voice:</label>
+          <select id="setting-voice-en" class="custom-select"></select>
+        </div>
+
+        <div class="setting-group">
+          <label>🇧🇩 Bengali Voice:</label>
+          <select id="setting-voice-bn" class="custom-select"></select>
+        </div>
+
+        <div class="setting-actions">
+          <button id="btn-test-voice" class="pill-btn primary">ভয়েস টেস্ট করো 🔊</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Celebration Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+  </div>
+
+  <!-- Load Vocabulary Data -->
+  <script src="data/vocabulary.js"></script>
+  <!-- Load App Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

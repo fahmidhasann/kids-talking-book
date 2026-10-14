@@ -1,0 +1,25 @@
+{
+  "name": "ছোটদের কথা বলা বই - Kids Talking Learning Book",
+  "short_name": "TalkingBook",
+  "description": "ছোটদের জন্য আকর্ষণীয় দ্বিভাষিক কথা বলা শেখার বই ও খেলা",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#88D435",
+  "theme_color": "#FF7A00",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "kids", "games"]
+}
